@@ -9,7 +9,7 @@ let cardContainer = document.getElementById('nextdays');
 let weatherData = [];
 const apiKey = `0a21aac778c44fcbbaf71139241412`;
 const daysNum = `3`;
-const baseUrl = `http://api.weatherapi.com/v1/forecast.json?`;
+const baseUrl = `https://api.weatherapi.com/v1/forecast.json?`;
 
 let mainIcon = document.querySelector('.state1');
 let mainTemp = document.querySelector('.degree-number');
