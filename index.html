@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/v4-shims.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-cloud-bolt pe-2"></i>Weather</a>
+            <div class="d-flex ms-auto search-box" style="position: relative; width: 300px">
+                <input class="form-control me-2 search-in" type="search" placeholder="Enter city name..."
+                    aria-label="Search" id="search" />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
+    </nav>
+    <header class="d-flex text-white mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="header-box d-flex justify-content-between">
+                    <div class="main-info">
+                        <img src="" class="state1 main-state">
+                        <h1 class="degree"><span class="degree-number"> </span>&deg;C</h1>
+                        <h2 class="text-uppercase city-name"></h2>
+                    </div>
+                    <div class="sec-info align-self-end text-white">
+                        <p>Today is : <span class="fw-bold current-day"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center" id="nextdays">
+                
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

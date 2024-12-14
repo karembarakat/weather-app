@@ -1,0 +1,130 @@
+:root {
+  --bg-main: #1e1e2c;
+  --bg-sec: #dddde4;
+  --txt-color: #02151f;
+  --bg-card: #1e1e2c;
+  --action: #007bff;
+}
+
+
+/* BOOTSTRAP OVERRIDE */
+
+.bg-body-tertiary {
+  --bs-tertiary-bg-rgb: none;
+}
+.navbar .container-fluid {
+  width: 66.5%;
+}
+.search-box .form-control {
+  padding: 0.575rem 4rem 0.575rem 0.775rem;
+}
+.navbar {
+  --bs-navbar-padding-y: 2rem;
+}
+.navbar a {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+  font-weight: 600;
+  &:hover{
+    color: #f1f1f1;
+  }
+}
+.navbar i {
+  color: var(--action);
+}
+/* MY STYLES */
+.search-box {
+  position: relative;
+}
+.search-icon {
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 0.635rem;
+  transform: translateY(-50%);
+  color: var(--action);
+}
+header {
+  width: 65%;
+  justify-self: center;
+  border-radius: 1.3rem;
+  padding: 10em 2rem 4rem 2rem;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0rem 0.3rem 2rem rgba(0, 0, 0, 0.3);
+}
+.header-box .sec-info {
+  text-align: right;
+  font-size: 1.3rem;
+}
+.header-box .main-info i {
+  font-size: 1.7rem;
+}
+section .container {
+  width: 66.5%;
+  color: var(--txt-color);
+}
+.card {
+  background-color: #212529;
+  border-radius: 1.25rem;
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.72);
+}
+.card .temp {
+  display: flex;
+  gap: 1.5rem;
+}
+.card .state {
+  display: flex;
+  align-items: center;
+}
+.card .state i {
+  font-size: 3rem;
+  color: var(--bg-main);
+}
+.card h1 {
+  color: var(--action);
+}
+.card h3 {
+  font-weight: 700;
+}
+.card h4 {
+  font-size: 1.1rem;
+}
+.card .state h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.card p {
+  color: var(--action);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.main-state {
+  margin-left: -1rem;
+}
+
+@media (max-width: 991.98px) {
+  section .container {
+    width: 90%;
+  }
+  header {
+    width: 90%;
+  }
+  .navbar .container-fluid {
+    width: 75%;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
